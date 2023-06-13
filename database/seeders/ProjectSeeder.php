@@ -96,6 +96,7 @@ class ProjectSeeder extends Seeder
                 $newProject->category_id = 1;
             }
             $newProject->save();
+            $newProject->languages()->attach(rand(1,4));
         }
     }
 }
