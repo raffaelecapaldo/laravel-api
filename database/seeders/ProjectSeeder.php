@@ -40,8 +40,47 @@ class ProjectSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis vel ante quis fermentum. In iaculis mauris lorem, aliquam viverra ex ornare a. Proin pretium dolor metus, quis consequat velit facilisis vitae. Etiam maximus id sem sit amet fermentum. Fusce eros nisl, consectetur a sem non, egestas ultrices purus. Quisque faucibus, metus non egestas interdum, odio diam hendrerit turpis, tristique interdum nunc velit eget erat.',
                 'repo_url' => 'https://github.com/raffaelecapaldo/js-campominato-dom'
             ],
+            [
+                'name' => 'PHP Badwords',
+                'image_url' => 'https://wallpapers.com/images/hd/red-forest-trees-n8z3bf3dv0b2cj6w.jpg',
+                'category_id' => '2',
+                'tags' => 'Games',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis vel ante quis fermentum. In iaculis mauris lorem, aliquam viverra ex ornare a. Proin pretium dolor metus, quis consequat velit facilisis vitae. Etiam maximus id sem sit amet fermentum. Fusce eros nisl, consectetur a sem non, egestas ultrices purus. Quisque faucibus, metus non egestas interdum, odio diam hendrerit turpis, tristique interdum nunc velit eget erat.',
+                'repo_url' => 'https://github.com/raffaelecapaldo/php-badwords'
+            ],
+            [
+                'name' => 'Vite YugiOh',
+                'image_url' => 'https://wallpapers.com/images/hd/red-forest-trees-n8z3bf3dv0b2cj6w.jpg',
+                'category_id' => '2',
+                'tags' => 'Games',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis vel ante quis fermentum. In iaculis mauris lorem, aliquam viverra ex ornare a. Proin pretium dolor metus, quis consequat velit facilisis vitae. Etiam maximus id sem sit amet fermentum. Fusce eros nisl, consectetur a sem non, egestas ultrices purus. Quisque faucibus, metus non egestas interdum, odio diam hendrerit turpis, tristique interdum nunc velit eget erat.',
+                'repo_url' => 'https://github.com/raffaelecapaldo/vite-yu-gi-oh'
+            ],
+            [
+                'name' => 'Vue Email List',
+                'image_url' => 'https://wallpapers.com/images/hd/red-forest-trees-n8z3bf3dv0b2cj6w.jpg',
+                'category_id' => '2',
+                'tags' => 'Games',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis vel ante quis fermentum. In iaculis mauris lorem, aliquam viverra ex ornare a. Proin pretium dolor metus, quis consequat velit facilisis vitae. Etiam maximus id sem sit amet fermentum. Fusce eros nisl, consectetur a sem non, egestas ultrices purus. Quisque faucibus, metus non egestas interdum, odio diam hendrerit turpis, tristique interdum nunc velit eget erat.',
+                'repo_url' => 'https://github.com/raffaelecapaldo/vue-email-list'
+            ],
+            [
+                'name' => 'Oggetto prova',
+                'image_url' => 'https://wallpapers.com/images/hd/red-forest-trees-n8z3bf3dv0b2cj6w.jpg',
+                'category_id' => '2',
+                'tags' => 'Games',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis vel ante quis fermentum. In iaculis mauris lorem, aliquam viverra ex ornare a. Proin pretium dolor metus, quis consequat velit facilisis vitae. Etiam maximus id sem sit amet fermentum. Fusce eros nisl, consectetur a sem non, egestas ultrices purus. Quisque faucibus, metus non egestas interdum, odio diam hendrerit turpis, tristique interdum nunc velit eget erat.',
+                'repo_url' => 'https://github.com/raffaelecapaldo/js-campominato-dom'
+            ],
+            [
+                'name' => 'Oggetto prova 2',
+                'image_url' => 'https://wallpapers.com/images/hd/red-forest-trees-n8z3bf3dv0b2cj6w.jpg',
+                'category_id' => '2',
+                'tags' => 'Games',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis vel ante quis fermentum. In iaculis mauris lorem, aliquam viverra ex ornare a. Proin pretium dolor metus, quis consequat velit facilisis vitae. Etiam maximus id sem sit amet fermentum. Fusce eros nisl, consectetur a sem non, egestas ultrices purus. Quisque faucibus, metus non egestas interdum, odio diam hendrerit turpis, tristique interdum nunc velit eget erat.',
+                'repo_url' => 'https://github.com/raffaelecapaldo/js-campominato-dom'
+            ],
         ];
-
         foreach($projects as $project) {
             $newProject = new Project();
             $newProject->name = $project['name'];
