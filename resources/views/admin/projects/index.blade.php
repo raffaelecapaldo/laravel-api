@@ -38,6 +38,15 @@
                         @method('DELETE')
                         <button data-item-type="project" data-item-name="{{$project->name}}" type="submit" class="btn btn-danger delete-button"><i class="fa-regular fa-trash-can"></i></button>
                     </form>
+                    <form class="d-inline" method="POST" action="{{route('admin.projects.featured', $project->slug)}}">
+                        @csrf
+                        @method('PATCH')
+                        <button type="submit" class="btn btn-info"><i class="@if ($project->featured)
+                            fa-solid fa-star
+                        @else
+                        fa-regular fa-star
+                        @endif"></i></button>
+                    </form>
                     </td>
                   </tr>
                 @empty

@@ -20,7 +20,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::latest()->paginate(8);
+        $projects = Project::latest()->orderBy('featured', 'desc')->paginate(6);
         return view('admin.projects.index', compact('projects'));
     }
 
@@ -105,6 +105,18 @@ class ProjectController extends Controller
         $project->delete();
         return redirect()->route('admin.projects.index')->with('message', "Il progetto $project->name è stato cancellato correttamente");
 
+    }
+
+    public function setfeatured($slug) {
+        $project = Project::where('slug', $slug)->first();
+        $project->featured = !$project->featured;
+        $project->save();
+        if ($project->featured) {
+        return redirect()->route('admin.projects.index')->with('message', "Il progetto $project->name è stato messo in vetrina");
+        }
+        else {
+        return redirect()->route('admin.projects.index')->with('message', "Il progetto $project->name è stato rimosso dalla vetrina");
+        }
     }
 }
 

@@ -28,6 +28,7 @@ Route::middleware(['auth', 'verified'])
     ->group(function(){
         Route::get('/', [DashboardController::class, 'index'])
         ->name('dashboard');
+        Route::patch('/projects/{slug}/featured', [ProjectController::class, 'setfeatured'])->name('projects.featured');
         Route::resource('projects', ProjectController::class)->parameters(['projects' => 'project:slug']);
         Route::resource('categories', CategoryController::class)->parameters(['categories' => 'category:slug'])->except(['edit', 'create']);
         Route::resource('languages', LanguageController::class)->parameters(['languages' => 'language:slug'])->except(['edit', 'create']);
