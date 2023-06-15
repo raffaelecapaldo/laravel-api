@@ -10,7 +10,7 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::latest()->with('languages')->paginate(5);
+        $projects = Project::latest()->with('languages')->paginate(20);
         if (!$projects) {
             return response()->json([
                 'success' => false,
