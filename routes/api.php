@@ -21,3 +21,5 @@ use App\Http\Controllers\Api\ProjectController;
  */
 
  Route::resource('projects', ProjectController::class)->parameters(['projects' => 'project:slug'])->only(['index', 'show']);
+ Route::get('showcase',  [ProjectController::class, 'showcase']);
+
